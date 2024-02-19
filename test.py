@@ -3,6 +3,7 @@ from fastapi.testclient import TestClient
 from api import app
 import pickle
 import os
+import unittest
 
 # Création du client de test
 client = TestClient(app)
@@ -126,8 +127,7 @@ class TestModel(TestCase):
 
 # Démarrage des tests
 if __name__ == "__main__":
-    main(verbosity=2)
-
+    unittest.main(verbosity=2)
 
 # # Import des librairies
 # from unittest import TestCase, main
